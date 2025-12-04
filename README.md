@@ -44,7 +44,47 @@ Android 8.1 ~ 16
 - GitHub 问题：[问题](https://github.com/re-zero001/LSPosed-Irena/issues/)
 -（针对中文人士）本项目仅接受英语**标题**的问题。如果您不懂英语，请使用[翻译工具](https://www.deepl.com/zh/translator)
 ＃＃ 下载
+## 致开发者
 
-- 转到电报：[@lspose-irena](https://t.me/s/lsposed_irena)
-- 对于金丝雀构建，请检查 [Github Actions](https://github.com/re-zero001/LSPosed-Irena/actions/workflows/core.yml?query=branch%3Adev)
+欢迎开发者使用基于 LSPosed 框架的钩子编写 Xposed 模块。基于 LSPosed 框架的模块与原始 Xposed 框架完全兼容，反之亦然，基于 Xposed 框架的模块也能与 LSPosed 框架良好配合。
 
+- [Xposed 框架 API](https://api.xposed.info/)
+- 我们使用自己的模块仓库。我们欢迎开发者向我们的仓库提交模块，之后即可在 LSPosed 中下载这些模块。
+
+- [LSPosed 模块仓库](https://github.com/Xposed-Modules-Repo)
+
+## 社区讨论
+
+此分支将不包含以下内容。
+
+## 致谢
+
+- [Magisk](https://github.com/topjohnwu/Magisk/): 使这一切成为可能
+
+- [ZygiskNext](https://github.com/Dr-TSNG/ZygiskNext): 提供了一种将代码注入 Zygote 进程的方法
+
+- [XposedBridge](https://github.com/rovo89/XposedBridge): 原始的 Xposed 框架 API
+
+- [Dobby](https://github.com/re-zero001/Dobby): 用于内联 hook
+
+- [LSPlant](https://github.com/LSPosed/LSPlant): 核心 ART hook 框架
+
+- [LSPosed](https://github.com/LSPosed/LSPosed): 分支源代码
+
+- [EdXposed](https://github.com/ElderDrivers/EdXposed): LSPosed 分支源代码
+
+- [xz_embedded](https://github.com/tukaani-project/xz-embedded): 将 debug_info 部分解压缩为剥离后的库
+
+- [system_properties](https://github.com/topjohnwu/system_properties): 在 LSPosed 中切换属性访问
+
+- ~[SandHook](https://github.com/ganyao114/SandHook/): SandHook 变体的 ART hooking 框架~
+
+- ~[YAHFA](https://github.com/rk700/YAHFA): 之前的 ART hooker 框架~
+
+- ~[dexmaker](https://github.com/linkedin/dexmaker) 和 [dalvikdx](https://github.com/JakeWharton/dalvik-dx): 用于动态生成 YAHFA hooker 类~
+
+- ~[DexBuilder](https://github.com/LSPosed/DexBuilder): 用于动态生成 YAHFA hooker 类~
+
+## 许可
+
+LSPosed 采用 **GNU 通用公共许可证 v3 (GPL-3)** 授权 (http://www.gnu.org/copyleft/gpl.html)。
