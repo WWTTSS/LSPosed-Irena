@@ -1,70 +1,91 @@
-# LSPosed Framework
+# LSPosed框架
 
 [![Build](https://img.shields.io/github/actions/workflow/status/re-zero001/LSPosed-Irena/core.yml?branch=dev&event=push&logo=github&label=Build)](https://github.com/re-zero001/LSPosed-Irena/actions/workflows/core.yml?query=event%3Apush+branch%3Adev+is%3Acompleted) [![Channel](https://img.shields.io/badge/Follow-Telegram-blue.svg?logo=telegram)](https://t.me/lsposed-irena) [![Download](https://img.shields.io/github/v/release/LSPosed/LSPosed?color=orange&logoColor=orange&label=Download&logo=DocuSign)](https://github.com/re-zero001/LSPosed-Irena/releases/latest) [![Total](https://shields.io/github/downloads/LSPosed/LSPosed/total?logo=Bookmeter&label=Counts&logoColor=yellow&color=yellow)](https://github.com/LSPosed/LSPosed/releases)
 
-## Introduction 
+* [English](README.md)
+* [简体中文](README.zh-CN.md)
 
-A Zygisk module trying to provide an ART hooking framework which delivers consistent APIs with the OG Xposed, leveraging LSPlant hooking framework.
+## 简介
 
-> Xposed is a framework for modules that can change the behavior of the system and apps without touching any APKs. That's great because it means that modules can work for different versions and even ROMs without any changes (as long as the original code was not changed too much). It's also easy to undo. As all changes are done in the memory, you just need to deactivate the module and reboot to get your original system back. There are many other advantages, but here is just one more: multiple modules can do changes to the same part of the system or app. With modified APKs, you have to choose one. No way to combine them, unless the author builds multiple APKs with different combinations.
+这是一个 Zygisk 模块，旨在提供一个与原版 Xposed 框架保持一致的 ART hook 框架，并利用 LSPlant hook 框架。
 
-## Supported Versions
+> Xposed 是一个模块框架，它允许模块在不修改任何 APK 的情况下改变系统和应用程序的行为。这非常棒，因为这意味着模块可以兼容不同的系统版本甚至 ROM，而无需任何修改（只要原始代码没有被大幅改动）。而且，撤销也很容易。由于所有更改都在内存中进行，您只需停用模块并重启即可恢复原始系统。Xposed 还有许多其他优势，这里再举一个例子：多个模块可以同时修改系统或应用程序的同一部分。而使用修改过的 APK，您只能选择其中一个。除非作者构建了多个包含不同组合的 APK，否则无法将它们组合起来使用。
+
+## 支持的版本
 
 Android 8.1 ~ 16
 
-## Install
+## 安装
 
-1. Install Magisk v26+
-2. Install [ZygiskNext](https://github.com/Dr-TSNG/ZygiskNext/releases)
-> Or enable zygisk in magisk, we recommend use ZygiskNext.
-3. [Download](#download) and install LSPosed in Magisk app
-4. Reboot
-5. Open LSPosed manager from notification
-> Or install manager.apk in zip file.
-6. Have fun :)
+1. 安装 Magisk v26+
 
-## Download
+2. 安装 [ZygiskNext](https://github.com/Dr-TSNG/ZygiskNext/releases)
 
-- Go to telegram: [@lsposed-irena](https://t.me/s/lsposed_irena)
-- For canary build, please check [Github Actions](https://github.com/re-zero001/LSPosed-Irena/actions/workflows/core.yml?query=branch%3Adev)
+> 或者在 Magisk 中启用 Zygisk，我们推荐使用 ZygiskNext。
 
-## Get Help
+3. [下载](#download) 并在 Magisk 应用中安装 LSPosed
 
-**Only bug reports from **THE LATEST DEBUG BUILD** will be accepted.**
-- GitHub issues: [Issues](https://github.com/re-zero001/LSPosed-Irena/issues/)
-- (For Chinese speakers) 本项目只接受英语**标题**的issue。如果您不懂英语，请使用[翻译工具](https://www.deepl.com/zh/translator)
+4. 重启
 
-## For Developers
+5. 从通知栏打开 LSPosed 管理器
 
-Developers are welcome to write Xposed modules with hooks based on LSPosed Framework. A module based on LSPosed framework is fully compatible with the original Xposed Framework, and vice versa, a Xposed Framework-based module will work well with LSPosed framework too.
+> 或者安装压缩包中的 manager.apk 文件。
 
-- [Xposed Framework API](https://api.xposed.info/)
+6. 尽情享受吧 :)
 
-We use our own module repository. We welcome developers to submit modules to our repository, and then modules can be downloaded in LSPosed.
+＃＃ 下载
 
-- [LSPosed Module Repository](https://github.com/Xposed-Modules-Repo)
+- 转到电报：[@lspose-irena](https://t.me/s/lsposed_irena)
+- 对于金丝雀构建，请检查 [Github Actions](https://github.com/re-zero001/LSPosed-Irena/actions/workflows/core.yml?query=branch%3Adev)
 
-## Community Discussion
+## 获取帮助
 
-This fork won't have.
+**仅接受来自**最新调试版本**的错误报告。**
+- GitHub 问题：[问题](https://github.com/re-zero001/LSPosed-Irena/issues/)
+-（针对中文人士）本项目仅接受英语**标题**的问题。如果您不懂英语，请使用[翻译工具](https://www.deepl.com/zh/translator)
+＃＃ 下载
+## 致开发者
 
-## Credits 
+欢迎开发者使用基于 LSPosed 框架的钩子编写 Xposed 模块。基于 LSPosed 框架的模块与原始 Xposed 框架完全兼容，反之亦然，基于 Xposed 框架的模块也能与 LSPosed 框架良好配合。
 
-- [Magisk](https://github.com/topjohnwu/Magisk/): makes all these possible
-- [ZygiskNext](https://github.com/Dr-TSNG/ZygiskNext): provides a way to inject code into zygote process
-- [XposedBridge](https://github.com/rovo89/XposedBridge): the OG Xposed framework APIs
-- [Dobby](https://github.com/re-zero001/Dobby): used for inline hooking
-- [LSPlant](https://github.com/LSPosed/LSPlant): the core ART hooking framework
-- [LSPosed](https://github.com/LSPosed/LSPosed): fork source
-- [EdXposed](https://github.com/ElderDrivers/EdXposed): LSPosed fork source
-- [xz_embedded](https://github.com/tukaani-project/xz-embedded):decompress debug_info section into stripped libraries
-- [system_properties](https://github.com/topjohnwu/system_properties):switch properties access within LSPosed
-- ~[SandHook](https://github.com/ganyao114/SandHook/): ART hooking framework for SandHook variant~
-- ~[YAHFA](https://github.com/rk700/YAHFA): previous ART hooking framework~
-- ~[dexmaker](https://github.com/linkedin/dexmaker) and [dalvikdx](https://github.com/JakeWharton/dalvik-dx): to dynamically generate YAHFA hooker classes~
-- ~[DexBuilder](https://github.com/LSPosed/DexBuilder): to dynamically generate YAHFA hooker classes~
+- [Xposed 框架 API](https://api.xposed.info/)
+- 我们使用自己的模块仓库。我们欢迎开发者向我们的仓库提交模块，之后即可在 LSPosed 中下载这些模块。
 
-## License
+- [LSPosed 模块仓库](https://github.com/Xposed-Modules-Repo)
 
-LSPosed is licensed under the **GNU General Public License v3 (GPL-3)** (http://www.gnu.org/copyleft/gpl.html).
+## 社区讨论
+
+此分支将不包含以下内容。
+
+## 致谢
+
+- [Magisk](https://github.com/topjohnwu/Magisk/): 使这一切成为可能
+
+- [ZygiskNext](https://github.com/Dr-TSNG/ZygiskNext): 提供了一种将代码注入 Zygote 进程的方法
+
+- [XposedBridge](https://github.com/rovo89/XposedBridge): 原始的 Xposed 框架 API
+
+- [Dobby](https://github.com/re-zero001/Dobby): 用于内联 hook
+
+- [LSPlant](https://github.com/LSPosed/LSPlant): 核心 ART hook 框架
+
+- [LSPosed](https://github.com/LSPosed/LSPosed): 分支源代码
+
+- [EdXposed](https://github.com/ElderDrivers/EdXposed): LSPosed 分支源代码
+
+- [xz_embedded](https://github.com/tukaani-project/xz-embedded): 将 debug_info 部分解压缩为剥离后的库
+
+- [system_properties](https://github.com/topjohnwu/system_properties): 在 LSPosed 中切换属性访问
+
+- ~[SandHook](https://github.com/ganyao114/SandHook/): SandHook 变体的 ART hooking 框架~
+
+- ~[YAHFA](https://github.com/rk700/YAHFA): 之前的 ART hooker 框架~
+
+- ~[dexmaker](https://github.com/linkedin/dexmaker) 和 [dalvikdx](https://github.com/JakeWharton/dalvik-dx): 用于动态生成 YAHFA hooker 类~
+
+- ~[DexBuilder](https://github.com/LSPosed/DexBuilder): 用于动态生成 YAHFA hooker 类~
+
+## 许可
+
+LSPosed 采用 **GNU 通用公共许可证 v3 (GPL-3)** 授权 (http://www.gnu.org/copyleft/gpl.html)。
 
