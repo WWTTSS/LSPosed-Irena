@@ -43,7 +43,7 @@ Android 8.1 ~ 16
 **仅接受来自**最新调试版本**的错误报告。**
 - GitHub 问题：[问题](https://github.com/re-zero001/LSPosed-Irena/issues/)
 -（针对中文人士）本项目仅接受英语**标题**的问题。如果您不懂英语，请使用[翻译工具](https://www.deepl.com/zh/translator)
-＃＃ 下载
+
 ## 致开发者
 
 欢迎开发者使用基于 LSPosed 框架的钩子编写 Xposed 模块。基于 LSPosed 框架的模块与原始 Xposed 框架完全兼容，反之亦然，基于 Xposed 框架的模块也能与 LSPosed 框架良好配合。
